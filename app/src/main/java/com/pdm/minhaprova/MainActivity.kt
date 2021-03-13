@@ -3,12 +3,13 @@ package com.pdm.minhaprova
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.google.android.material.snackbar.Snackbar
 import com.pdm.minhaprova.databinding.ActivityMainBinding
+import com.pdm.minhaprova.repository.Livro
+import com.pdm.minhaprova.repository.LivroDBOpener
 
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +35,19 @@ class MainActivity : AppCompatActivity() {
             dialog.show(supportFragmentManager,"Dialog")
         }
 
+        val l1 = Livro(1, "A Guerra dos Mundos", "H.G Wells", 1898, 9.5f)
+        val l2 = Livro(2, "A Máquina do Tempo", "H.G Wells", 1895, 7.8f)
+
+        val db = LivroDBOpener(this)
+
+        db.insert(l1)
+        db.insert(l2)
+
+        val temp = db.findById(2)
+
+        println(temp.toString())
+
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -53,8 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        println("Salvando os dados")
-        println(binding.text1.text.toString())
+
         outState.putString("textView1", binding.text1.text.toString())
         outState.putString("textView2", binding.text2.text.toString())
 
