@@ -28,6 +28,11 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent, 1)
         }
 
+        binding.button2.setOnClickListener {
+            val dialog = SendMessageDialogFragment(applicationContext)
+            dialog.isCancelable = false
+            dialog.show(supportFragmentManager,"Dialog")
+        }
 
     }
 
