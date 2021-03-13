@@ -8,4 +8,6 @@
     <string name="cancela">Cancelar</string>
     <string name="digite_algo_aqui">Digite algo aqui</string>
     <string name="digite_algo">Digite algo</string>
+    <string name="text_view_1">Text view 1</string>
+    <string name="text_view_2">Text view 2</string>
 </resources>
