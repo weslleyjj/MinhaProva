@@ -35,17 +35,23 @@ class MainActivity : AppCompatActivity() {
             dialog.show(supportFragmentManager,"Dialog")
         }
 
-        val l1 = Livro(1, "A Guerra dos Mundos", "H.G Wells", 1898, 9.5f)
-        val l2 = Livro(2, "A Máquina do Tempo", "H.G Wells", 1895, 7.8f)
+//        val l1 = Livro(1, "A Guerra dos Mundos", "H.G Wells", 1898, 9.5f)
+//        val l2 = Livro(2, "A Máquina do Tempo", "H.G Wells", 1895, 7.8f)
+//
+//        val db = LivroDBOpener(this)
+//
+//        db.insert(l1)
+//        db.insert(l2)
+//
+//        val temp = db.findById(2)
+//
+//        println(temp.toString())
 
-        val db = LivroDBOpener(this)
+        binding.button3.setOnClickListener {
+            val intent = Intent(this, ActivityAcao2::class.java)
+            startActivityForResult(intent, 2)
 
-        db.insert(l1)
-        db.insert(l2)
-
-        val temp = db.findById(2)
-
-        println(temp.toString())
+        }
 
 
     }
@@ -53,9 +59,17 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode == Activity.RESULT_OK){
-            val textoDigitado = data?.getStringExtra("textoDigitado").toString()
 
-            binding.text1.text = textoDigitado
+            when(requestCode){
+                1 -> {
+                    val textoDigitado = data?.getStringExtra("textoDigitado").toString()
+                    binding.text1.text = textoDigitado
+                }
+                2 -> {
+                    val cadastrado = data?.getStringExtra("cadastro").toString()
+                    binding.text2.text = cadastrado
+                }
+            }
 
         }else if (resultCode == Activity.RESULT_CANCELED){
             val snackbar =

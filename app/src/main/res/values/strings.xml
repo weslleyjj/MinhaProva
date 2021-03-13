@@ -10,4 +10,9 @@
     <string name="digite_algo">Digite algo</string>
     <string name="text_view_1">Text view 1</string>
     <string name="text_view_2">Text view 2</string>
+    <string name="titulo">Título:</string>
+    <string name="autor">Autor:</string>
+    <string name="ano">Ano:</string>
+    <string name="nota">Nota:</string>
+    <string name="salvar">Salvar</string>
 </resources>
