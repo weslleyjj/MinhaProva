@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MinhaProva</string>
+    <string name="botao1">Botão 1</string>
+    <string name="botao2">Botão 2</string>
+    <string name="botao3">Botão 3</string>
+    <string name="botao4">Botão 4</string>
+    <string name="ok">OK</string>
+    <string name="cancela">Cancelar</string>
+    <string name="digite_algo_aqui">Digite algo aqui</string>
+    <string name="digite_algo">Digite algo</string>
+</resources>
