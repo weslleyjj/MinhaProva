@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo"
+            android:autofillHints="@string/titulo"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autor"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/autor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autor"
+            android:autofillHints="@string/autor"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="18sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ano"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/ano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ano"
+            android:autofillHints="@string/ano"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="32sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nota"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <RatingBar
+            android:id="@+id/barNotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="bottom|start"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="90dp"
+        >
+
+        <Button
+            android:id="@+id/buttonAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anterior"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/buttonCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sair"
+            android:layout_marginStart="20dp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/buttonProximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proximo"
+            tools:ignore="ButtonStyle"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

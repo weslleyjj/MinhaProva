@@ -15,4 +15,7 @@
     <string name="ano">Ano:</string>
     <string name="nota">Nota:</string>
     <string name="salvar">Salvar</string>
+    <string name="anterior">Anterior</string>
+    <string name="proximo">Próximo</string>
+    <string name="sair">Sair</string>
 </resources>

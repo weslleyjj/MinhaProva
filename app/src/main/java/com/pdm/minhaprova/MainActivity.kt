@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
             dialog.show(supportFragmentManager,"Dialog")
         }
 
-//        val l1 = Livro(1, "A Guerra dos Mundos", "H.G Wells", 1898, 9.5f)
-//        val l2 = Livro(2, "A Máquina do Tempo", "H.G Wells", 1895, 7.8f)
+//        val l1 = Livro(0, "A Guerra dos Mundos", "H.G Wells", 1898, 9.5f)
+//        val l2 = Livro(0, "A Máquina do Tempo", "H.G Wells", 1895, 7.8f)
 //
 //        val db = LivroDBOpener(this)
 //
@@ -52,6 +52,13 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent, 2)
 
         }
+
+        binding.button4.setOnClickListener {
+            val intent = Intent(this, ActivityAcao3::class.java)
+            startActivity(intent)
+
+        }
+
 
 
     }
