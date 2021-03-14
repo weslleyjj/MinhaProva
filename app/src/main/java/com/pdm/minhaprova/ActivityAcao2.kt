@@ -23,7 +23,13 @@ class ActivityAcao2: AppCompatActivity() {
 
             val titulo = binding.editTitulo.text.toString()
             val autor = binding.editAutor.text.toString()
-            val ano = Integer.parseInt(binding.editAno.text.toString())
+            var ano = 0
+            if(binding.editAno.text.toString().isBlank()){
+                ano = -1
+            }else{
+                ano = Integer.parseInt(binding.editAno.text.toString())
+            }
+
             val nota = binding.barNotas.rating
 
             if (validarCampos(titulo, autor, ano, nota)){

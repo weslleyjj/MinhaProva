@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:ems="13"
             android:inputType="text"
-            android:text="@string/titulo"
+            android:hint="@string/titulo"
             android:autofillHints="@string/titulo"
             tools:ignore="LabelFor" />
 
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:ems="13"
             android:inputType="text"
-            android:text="@string/autor"
+            android:hint="@string/autor"
             android:autofillHints="@string/autor"
             android:layout_marginStart="3dp"
             tools:ignore="LabelFor"
@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:ems="13"
             android:inputType="number"
-            android:text="@string/ano"
+            android:hint="@string/ano"
             android:autofillHints="@string/ano"
             android:layout_marginStart="12dp"
             tools:ignore="LabelFor" />
